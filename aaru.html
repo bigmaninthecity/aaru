@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="aarustyle.css">
+		
+		<title>AARU - Take Notes</title>
+	</head>
+		<div class="container"  style="text-align: center">
+			<h1>
+				Take Notes with AARU 
+			</h1>
+		</div>
+
+		<div class="container" align="center">
+			<textarea class="form-control hresize" style="width:50%" id="textarea" value=""></textarea>
+		</div>
+		
+		<div align="center">
+			<button onclick="addNote()">Add Note</button>
+			<button onclick="document.getElementById('textarea').value = ''">Clear</button>
+		</div>
+		
+		<div>
+		<ul id="displayNote"></ul>
+		</div>
+
+	<body>
+		<script src="aaruscript.js"></script>
+
+	<!-- <Comments>
+
+		aaru - A note taking app
+
+		A note taking app for people who are on the go and need to jot down infomation quickly and able to access that information just as quick. 
+
+		Highly focused on being user friendly. All of the frills or none of the frills. aaru works for you and can be customize to suit your needs.
+
+		Primary functions of aaru: 
+
+			* adding notes
+			* select notes
+			* copy notes
+			* delete notes
+			* marking notes important
+			* set note alert reminders
+			* ability to share notes
+			* set formating
+				easily add bullet points
+				make to-do list
+			* mark notes with different identifiers:
+					notes for meetings with one or more people
+					notes for phone calls with one or more people 
+
+			Objects:
+			    type 	: ,
+			    mark 	: ,
+
+		var arr=[];
+
+		function pushText() {
+
+			arr.push(document.getElementById("textbox").value.toLowerCase());
+			console.log(arr);
+		}
+
+		function shiftaddText() {
+
+			arr.unshift(document.getElementById("textbox").value);
+			console.log(arr);
+		}
+
+		function popTextBack() {
+
+			arr.pop()
+			console.log(arr);
+		}
+
+
+		function shiftRemoveTextFront() {
+
+			arr.shift()
+			console.log(arr);
+		}
+
+		function splice(){
+
+			var index = document.getElementById('num1')
+			var number = document.getElementById('num2')
+			var text = document.getElementById('textbox')
+
+			arr.splice(index, number, textbox);
+			console.log(arr)
+
+		}
+
+		function pushPrompt(){
+
+			var element = prompt('Enter Element for Array');
+			arr.push(element);
+			console.log(arr);
+
+		}
+
+		function sort(){
+			arr.sort();
+			console.log(arr);
+		}
+
+	 </Comments> -->
+
+	</body>
+</html>
