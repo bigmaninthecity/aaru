@@ -1,18 +1,3 @@
-h1{
-	font-size: 32px;
-	font-weight: normal;
-	font-style: normal;
-	margin-bottom: 18px;
-	color: white;
-}
-
-#header {
-	padding: 20px;
-	font-size: 36px;
-	background-color: #000;
-	color: #fff;
-}
-
 @font-face {
 font-family: "Made Waffle Soft";
 src: url("css/fonts/made_waffle_soft.eot");
@@ -23,13 +8,43 @@ url("css/fonts/made_waffle_soft.svg#filename") format("svg");
 }
 
 h1 {
-font-family: 'Made Waffle Soft';
-font-weight:normal;
-font-style:normal;
-margin:0px;
-padding:0px;
-vertical-align: baseline;
+	font-family: 'Made Waffle Soft';
+	font-weight:normal;
+	font-style:normal;
+	margin:0px;
+	padding:0px;
+	vertical-align: baseline;
+	font-size: 32px;
+	margin-bottom: 18px;
+	color: white;
 }
+
+button {
+	font-family: 'Made Waffle Soft';
+	font-weight:normal;
+	font-style:normal;
+	margin:0px;
+	padding:0px;
+	vertical-align: baseline;
+	font-size: 10px;
+}
+
+#edit {
+	font-family: 'Made Waffle Soft';
+	font-weight:normal;
+	font-style:normal;
+	margin:0px;
+	padding:0px;
+}
+
+#delete  {
+	font-family: 'Made Waffle Soft';
+	font-weight:normal;
+	font-style:normal;
+	margin:0px;
+	padding:0px;
+}
+
 
 .space {
 	width: 100%;
@@ -38,8 +53,8 @@ vertical-align: baseline;
 
 .logo {
 
-  width: 250px;
-  height: 250px;
+	width: 250px;
+	height: 250px;
 
 }
 
@@ -62,5 +77,5 @@ header {
     top:0px;
     background-color: #EA46CC;
     margin-bottom: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
 }

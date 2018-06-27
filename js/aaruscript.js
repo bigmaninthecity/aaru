@@ -25,12 +25,22 @@ var notes = [];
 				return false;
 			}
 			
+			function editNote(num){
+			  var y = edit("Are you sure you want to delete?");
+			  document.getElementById("deleteNote"+num);
+			  if (x)
+				return true;
+			  else
+				return false;
+			}
+			
 			var number = 0
 			
 			function addNote() {
 
 				notes.unshift(document.getElementById("textarea").value);
 				document.getElementById('textarea').innerHTML ;
-			    document.getElementById("displayNote").innerHTML += '<div id="deleteNote'+number+'" >' + '<input type="checkbox" id="myCheck">' + ' ' + getClockTime() + ' ' + d.toDateString() + '<br>' + '<li>'+ ' ' + notes.shift() + '</li>' + '<br>' + '<input id="delete" type="button" onclick="confirmDelete('+number+')" value="Delete">' + '</div>';
+			    document.getElementById("displayNote").innerHTML += '<div id="deleteNote'+number+'" >' + ' ' + getClockTime() + ' ' + d.toDateString() + '<br>' + '<li>'+ ' ' + notes.shift() + '</li>' + 
+				'<br>' + '<input id="edit" type="button" class="btn btn-light" value="Edit Note">' + '    ' + '    ' +'<input id="delete" type="button" class="btn btn-light" onclick="confirmDelete('+number+')" value="Delete">' + '</div>';
 				number++
 			}
